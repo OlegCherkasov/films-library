@@ -10,16 +10,13 @@
         "
         alt="movie poster"
       ></v-img>
-
       <v-img
         v-else
         class="card__img rounded-lg ma-1"
         src="@/images/img_noPoster1.png"
         alt="no poster"
       ></v-img>
-
       <h3 class="title pl-4 pr-4 text-center">{{ item.title }}</h3>
-
       <v-card-text class="card__text">
         <div v-if="item.release_date">{{ item.release_date.slice(0, 4) }}</div>
         <div v-else>release date unknown</div>
